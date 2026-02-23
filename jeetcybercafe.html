@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeet Cyber Cafe</title>
+
+    <style>
+      :root {
+        --primary: #0a192f;
+        --secondary: #007bff;
+        --accent: #00c6ff;
+        --bg: #f4f7fa;
+        --dark: #1a1a1a;
+        --white: #ffffff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--dark);
+      }
+
+      header {
+        background: var(--primary);
+        color: var(--white);
+        padding: 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        background: var(--secondary);
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav a {
+        color: var(--white);
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      section {
+        padding: 50px 20px;
+      }
+
+      .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .service-card {
+        background: var(--white);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .service-card h3 {
+        color: var(--secondary);
+        margin-bottom: 10px;
+      }
+
+      .contact-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .contact-info {
+        background: var(--white);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .contact-info a {
+        display: block;
+        margin-top: 10px;
+        color: var(--secondary);
+        text-decoration: none;
+      }
+
+      form {
+        background: var(--white);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      form input,
+      form textarea,
+      form select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      form button {
+        margin-top: 15px;
+        padding: 12px;
+        background: var(--accent);
+        border: none;
+        color: var(--white);
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      iframe {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+
+      footer {
+        background: var(--primary);
+        color: var(--white);
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Jeet Cyber Cafe</h1>
+      <p>Your One-Stop Internet & Documentation Service Center</p>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="services">
+      <h2 style="text-align: center; margin-bottom: 30px">Our Services</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>Online Documentation</h3>
+          <p>All types of online form filling and documentation services.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Colour & B&W Printing</h3>
+          <p>High-quality printing at affordable prices.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Document Scanning</h3>
+          <p>Quick and secure document scanning services.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Consultancy</h3>
+          <p>Professional guidance for government & private services.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 style="text-align: center; margin-bottom: 30px">Contact Us</h2>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <a href="mailto:jeetcyber1@gmail.com">📧 jeetcyber1@gmail.com</a>
+          <a href="https://wa.me/919890917616" target="_blank"
+            >📱 WhatsApp: 9890917616</a
+          >
+
+          <h3 style="margin-top: 20px">Our Location</h3>
+
+          <!-- Replace with exact Google Maps location -->
+          <iframe
+            src="https://www.google.com/maps?q=Amravati,Maharashtra&output=embed"
+          >
+          </iframe>
+        </div>
+
+        <form>
+          <h3>Send Us a Message</h3>
+
+          <input type="text" placeholder="Your Name" required />
+          <input type="tel" placeholder="Your Contact Number" required />
+
+          <select required>
+            <option value="">Select Service</option>
+            <option>Online Documentation</option>
+            <option>Colour & B&W Printing</option>
+            <option>Document Scanning</option>
+            <option>Consultancy</option>
+          </select>
+
+          <textarea rows="4" placeholder="Describe Your Requirement"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>© 2026 Jeet Cyber Cafe | All Rights Reserved</footer>
+  </body>
+</html>

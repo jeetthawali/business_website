@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeet Cyber Cafe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="#home" class="logo">Jeet Cyber Cafe</a>
+
+      <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <!-- ADD THIS -->
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+      </nav>
+
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+    <section id="home" class="hero">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="videos/cyber-bg.mp4" type="video/mp4" />
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1>Jeet Cyber Cafe</h1>
+        <h2 class="typing"></h2>
+        <p>Fast • Reliable • Professional Documentation & IT Services</p>
+        <a href="#contact" class="cta-btn">Get Started</a>
+      </div>
+    </section>
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-content">
+          <h2>About Jeet Cyber Cafe</h2>
+
+          <p>
+            Jeet Cyber Cafe is a trusted digital service center located in
+            Dastur Nagar, Amravati. We provide fast, reliable and professional
+            online documentation and IT services to individuals and businesses.
+          </p>
+
+          <p>
+            With years of experience in handling government forms, printing
+            services, document scanning and consultancy, we ensure accuracy,
+            speed and complete customer satisfaction.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat">
+              <h3>1000+</h3>
+              <span>Happy Customers</span>
+            </div>
+
+            <div class="stat">
+              <h3>5+ Years</h3>
+              <span>Service Experience</span>
+            </div>
+
+            <div class="stat">
+              <h3>100%</h3>
+              <span>Customer Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="card">Online Documentation</div>
+        <div class="card">Colour & B&W Printing</div>
+        <div class="card">Document Scanning</div>
+        <div class="card">Consultancy</div>
+        <div class="card">Hardware Problems</div>
+        <div class="card">Xerox</div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Our Cyber Cafe</h2>
+      <div class="gallery">
+        <img src="images/g.jpg" alt="" />
+        <img src="images/images (1).jfif" alt="" />
+        <img src="images/images.jfif" alt="" />
+        <img src="images/jeetcyber.avif" alt="" />
+      </div>
+    </section>
+
+    <section id="reviews">
+      <h2>Customer Reviews</h2>
+      <div class="reviews">
+        <div class="review-card">
+          ⭐⭐⭐⭐⭐
+          <p>Best cyber cafe in Dastur Nagar. Very fast service.</p>
+          <strong>- Rahul</strong>
+        </div>
+        <div class="review-card">
+          ⭐⭐⭐⭐⭐
+          <p>Affordable printing and helpful consultancy.</p>
+          <strong>- Sneha</strong>
+        </div>
+        <div class="review-card">
+          ⭐⭐⭐⭐⭐
+          <p>Quick online documentation and form filling.</p>
+          <strong>- Amit</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+
+      <div class="contact-wrapper">
+        <!-- LEFT SIDE -->
+        <div class="contact-card">
+          <h3>Contact Details</h3>
+
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:jeetcyber1@gmail.com">jeetcyber1@gmail.com</a>
+          </p>
+
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:9890917616">9890917616</a>
+          </p>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Motinagar Main Rd,<br />
+            Near Jagruti Kirana Shop,<br />
+            Mudliyar Nagar, Dastur Nagar,<br />
+            Amravati, Maharashtra 444606
+          </p>
+
+          <p>
+            <i class="fa-solid fa-clock"></i>
+            Mon – Sat: 9:00 AM – 9:00 PM<br />
+            Sunday: 10:00 AM – 6:00 PM
+          </p>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="form-card">
+          <form id="contactForm">
+            <input type="text" placeholder="Your Name" required />
+            <input type="tel" placeholder="Your Contact Number" required />
+
+            <select required>
+              <option value="">Select Service</option>
+              <option>Online Documentation</option>
+              <option>Printing</option>
+              <option>Scanning</option>
+              <option>Consultancy</option>
+            </select>
+
+            <textarea
+              rows="4"
+              placeholder="Describe Your Requirement"
+            ></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- MAP BELOW -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=Motinagar Main Rd, Near Jagruti Kirana shop, Mudliyar Nagar, Dastur Nagar, Amravati, Maharashtra 444606&output=embed"
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <a href="https://wa.me/919890917616" class="whatsapp-btn" target="_blank"
+      >💬</a
+    >
+    <a href="tel:9890917616" class="call-btn">📞</a>
+
+    <footer>© 2026 Jeet Cyber Cafe | All Rights Reserved</footer>
+
+    <script src="script.js"></script>
+    <!-- Particle JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Scroll Reveal CDN -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
