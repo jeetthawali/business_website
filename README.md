@@ -4,11 +4,7 @@
 A fully responsive corporate business website developed for Jeet Cyber Cafe, providing digital documentation and IT services.
 
 ## 🚀 Live Demo
-( Add your deployed link here )
-Example:
-https://jeetcybercafe.netlify.app
 
----
 
 ## 📌 Project Overview
 
